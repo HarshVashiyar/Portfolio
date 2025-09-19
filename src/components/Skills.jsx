@@ -1,37 +1,52 @@
-import React from 'react';
-
 const Skills = () => {
-  const skillCategories = [
+  const marqueeRows = [
     {
-      title: 'Programming Languages',
-      skills: [
-        { name: 'C', level: 85, color: 'from-blue-500 to-cyan-500' },
-        { name: 'C++', level: 85, color: 'from-blue-600 to-blue-400' },
-        { name: 'Java', level: 80, color: 'from-orange-500 to-red-500' },
-        { name: 'Python', level: 80, color: 'from-green-500 to-yellow-500' },
-        { name: 'JavaScript', level: 90, color: 'from-yellow-400 to-orange-500' },
-      ]
+      direction: 'left',
+      speed: 'animate-marquee-left',
+      items: [
+        { name: 'C', slug: 'c' },
+        { name: 'C++', slug: 'cplusplus' },
+        { name: 'Java', slug: 'openjdk' },
+        { name: 'Python', slug: 'python' },
+        { name: 'JavaScript', slug: 'javascript' },
+        // { name: 'TypeScript', slug: 'typescript' },
+        { name: 'LaTeX', slug: 'overleaf' },
+      ],
     },
     {
-      title: 'Web Technologies',
-      skills: [
-        { name: 'HTML', level: 95, color: 'from-orange-500 to-red-500' },
-        { name: 'CSS', level: 90, color: 'from-blue-500 to-cyan-500' },
-        { name: 'React', level: 85, color: 'from-cyan-400 to-blue-500' },
-        { name: 'Node.js', level: 80, color: 'from-green-600 to-green-400' },
-        { name: 'MongoDB', level: 75, color: 'from-green-500 to-green-700' },
-      ]
+      direction: 'right',
+      speed: 'animate-marquee-right',
+      items: [
+        { name: 'HTML5', slug: 'html5' },
+        { name: 'CSS3', slug: 'css3' },
+        { name: 'React', slug: 'react' },
+        { name: 'Express', slug: 'express' },
+        { name: 'Node.js', slug: 'nodedotjs' },
+        { name: 'Redux', slug: 'redux' },
+        { name: 'Tailwind CSS', slug: 'tailwindcss' },
+        { name: 'Bootstrap', slug: 'bootstrap' },
+        { name: 'Vite', slug: 'vite' },
+      ],
     },
     {
-      title: 'Tools & Technologies',
-      skills: [
-        { name: 'Git', level: 85, color: 'from-red-500 to-orange-500' },
-        { name: 'Docker', level: 70, color: 'from-blue-400 to-blue-600' },
-        { name: 'AWS', level: 70, color: 'from-orange-400 to-yellow-500' },
-        { name: 'PostgreSQL', level: 75, color: 'from-blue-600 to-indigo-600' },
-        { name: 'Linux', level: 80, color: 'from-yellow-500 to-orange-500' },
-      ]
-    }
+      direction: 'left',
+      speed: 'animate-marquee-left-slow',
+      items: [
+        { name: 'MongoDB', slug: 'mongodb' },
+        { name: 'PostgreSQL', slug: 'postgresql' },
+        { name: 'Docker', slug: 'docker' },
+        { name: 'AWS', slug: 'amazonaws' },
+        { name: 'cPanel', slug: 'cpanel' },
+        { name: 'Git', slug: 'git' },
+        { name: 'Postman', slug: 'postman' },
+        { name: 'Linux', slug: 'linux' },
+        { name: 'Nginx', slug: 'nginx' },
+        { name: 'Vercel', slug: 'vercel' },
+        { name: 'Arduino', slug: 'arduino' },
+        // { name: 'Redis', slug: 'redis' },
+        // { name: 'GraphQL', slug: 'graphql' },
+      ],
+    },
   ];
 
   return (
@@ -46,7 +61,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.title}
@@ -87,7 +102,46 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
+      {/* Animated Skill Cards Marquee */}
+      <div className="mt-16 space-y-10">
+        {marqueeRows.map((row, rowIdx) => (
+          <div key={rowIdx} className="relative overflow-hidden">
+            <div 
+              className={`flex w-[300%] ${row.speed} will-change-transform`} 
+              style={{ 
+                animationIterationCount: 'infinite',
+                animationPlayState: 'running',
+                animationFillMode: 'both',
+                animationDelay: '0s',
+                animationDirection: 'normal'
+              }}
+            >
+              {[...row.items, ...row.items].map((item, i) => (
+                <div
+                  key={`${item.slug}-${i}`}
+                  className="w-56 md:w-72 flex-none mr-6 bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm p-5 rounded-2xl border border-gray-700 hover:border-orange-400/50 transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-gray-700 shadow-inner">
+                      <img
+                        src={`https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/${item.slug}.svg`}
+                        alt={item.name}
+                        className="w-10 h-10"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <div className="text-white text-xl font-bold leading-tight">{item.name}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
       </div>
     </section>
   );

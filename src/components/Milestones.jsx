@@ -23,6 +23,7 @@ const Milestones = () => {
       title: 'Codeforces Round 930',
       rank: 'Rank 3450/35,000+',
       percentage: 'Top 10% globally',
+      date: 'February 2024',
       icon: Target,
       color: 'from-blue-500 to-cyan-500'
     },
@@ -30,6 +31,7 @@ const Milestones = () => {
       title: 'CodeChef Starters 144',
       rank: 'Global Rank 202',
       percentage: 'Top 0.4%',
+      date: 'July 2024',
       icon: Trophy,
       color: 'from-yellow-500 to-orange-500'
     },
@@ -37,6 +39,7 @@ const Milestones = () => {
       title: 'JEE Advanced 2022',
       rank: 'AIR 16,846',
       percentage: 'Top 10.8% of 155,538',
+      date: 'August 2022',
       icon: Star,
       color: 'from-purple-500 to-pink-500'
     },
@@ -44,6 +47,7 @@ const Milestones = () => {
       title: 'JEE Mains 2022',
       rank: 'AIR 12,001',
       percentage: 'Top 1% among 1M+',
+      date: 'July 2022',
       icon: Award,
       color: 'from-green-500 to-emerald-500'
     }
@@ -162,6 +166,10 @@ const Milestones = () => {
                           <h3 className="text-xl md:text-2xl font-bold text-white mb-1 group-hover:text-orange-400 transition-colors duration-300">
                             {achievement.title}
                           </h3>
+                          <div className="flex items-center gap-2 text-orange-400 text-sm mb-1">
+                            <Calendar className="w-4 h-4" />
+                            {achievement.date}
+                          </div>
                           <p className="text-gray-400 text-sm">{achievement.rank}</p>
                         </div>
                       </div>

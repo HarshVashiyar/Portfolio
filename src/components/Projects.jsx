@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Code-Trialz',
       description: 'A full-stack online judge platform for competitive programming with real-time code execution, problem management, and user ranking system.',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop',
-      tech: ['MERN Stack', 'Docker', 'AWS', 'Vercel', 'Tailwind CSS'],
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Git', 'Docker', 'AWS', 'Linux', 'Operating System', 'Vercel', 'Nginx', 'Tailwind CSS'],
       github: 'https://github.com/HarshVashiyar/CodeTrialz',
       live: 'https://code-trialz.harshvashiyar.in',
       featured: true
@@ -16,7 +16,7 @@ const Projects = () => {
       title: 'MailStorm',
       description: 'A full-stack sub-CRM platform for email automation and communication management with advanced analytics and campaign tracking.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      tech: ['MERN Stack', 'Redux', 'PostgreSQL', 'Nginx', 'Linux'],
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Git', 'Cron', 'Redux', 'PostgreSQL', 'cPanel', 'Tailwind CSS', 'Apache'],
       github: 'https://github.com/HarshVashiyar/MailStorm',
       live: '#',
       featured: true
@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  // const otherProjects = projects.filter(p => !p.featured);
 
   return (
     <section id="projects" className="py-20 relative">
@@ -119,7 +119,7 @@ const Projects = () => {
         </div>
 
         {/* Additional Skills & Technologies */}
-        <div>
+        {/* <div>
           <h3 className="text-2xl font-bold text-white mb-8 text-center">Additional Skills</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -146,7 +146,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
