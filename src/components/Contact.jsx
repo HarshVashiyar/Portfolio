@@ -224,11 +224,11 @@ const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t border-gray-800">
+        {/* <div className="text-center mt-16 pt-8 border-t border-gray-800">
           <p className="text-gray-400">
             © 2025 Harsh Vashiyar. Built with ❤️ using React & Tailwind CSS
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
