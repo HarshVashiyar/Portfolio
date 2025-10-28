@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-12">
-          <a href="https://drive.google.com/file/d/1hg3IAYsOCfIFS6qrSb7rsKi6Ejf5KiCS/view?usp=sharing/" className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25" target="_blank">
+          <a href="https://drive.google.com/file/d/1Uj_EfnoanuwB18PGALYsW48TmMxkz-U4/view?usp=sharing/" className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25" target="_blank">
             <span className="relative z-10 flex items-center gap-2">
               View Resume
             </span>
