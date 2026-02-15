@@ -4,19 +4,6 @@ import { Calendar, MapPin, ExternalLink, Trophy, Award, Target, Star } from 'luc
 const Milestones = () => {
   const experiences = [
     {
-      title: 'Full Stack Developer',
-      company: 'Alpha Automation Pvt. Ltd.',
-      location: 'India',
-      period: 'May 2025 - July 2025',
-      description: 'Worked as a Full Stack Developer developing web applications and automation solutions. Gained hands-on experience with modern web technologies and development practices.',
-      achievements: [
-        'Developed full-stack web applications',
-        'Worked with modern development frameworks',
-        'Collaborated in agile development environment'
-      ],
-      tech: ['MERN Stack']
-    },
-    {
       title: 'Web Developer',
       company: 'Agevole Innovations Pvt. Ltd.',
       location: 'India',
@@ -28,6 +15,19 @@ const Milestones = () => {
         'Collaborated in agile development environment'
       ],
       tech: ['Angular.js + Java Springboot']
+    },
+    {
+      title: 'Full Stack Developer',
+      company: 'Alpha Automation Pvt. Ltd.',
+      location: 'India',
+      period: 'May 2025 - July 2025',
+      description: 'Worked as a Full Stack Developer developing web applications and automation solutions. Gained hands-on experience with modern web technologies and development practices.',
+      achievements: [
+        'Developed full-stack web applications',
+        'Worked with modern development frameworks',
+        'Collaborated in agile development environment'
+      ],
+      tech: ['MERN Stack']
     }
   ];
 
