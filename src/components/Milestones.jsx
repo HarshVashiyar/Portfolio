@@ -14,19 +14,24 @@ const Milestones = () => {
         'Worked with modern development frameworks',
         'Collaborated in agile development environment'
       ],
-      tech: ['MERN Stack', 'JavaScript', 'React', 'Node.js', 'MongoDB']
+      tech: ['MERN Stack']
+    },
+    {
+      title: 'Web Developer',
+      company: 'Agevole Innovations Pvt. Ltd.',
+      location: 'India',
+      period: 'Jan 2026 - May 2026',
+      description: 'Worked as a Web Developer developing in-house CRM services. Gained hands-on experience with shared hosting platforms and GCP along with modern web technologies and development practices.',
+      achievements: [
+        'Developed many in-house services from scratch',
+        'Learnt best production practices',
+        'Collaborated in agile development environment'
+      ],
+      tech: ['Angular.js + Java Springboot']
     }
   ];
 
   const achievements = [
-    {
-      title: 'Codeforces Round 930',
-      rank: 'Rank 3450/35,000+',
-      percentage: 'Top 10% globally',
-      date: 'February 2024',
-      icon: Target,
-      color: 'from-blue-500 to-cyan-500'
-    },
     {
       title: 'CodeChef Starters 144',
       rank: 'Global Rank 202',
@@ -34,6 +39,14 @@ const Milestones = () => {
       date: 'July 2024',
       icon: Trophy,
       color: 'from-yellow-500 to-orange-500'
+    },
+    {
+      title: 'Codeforces Round 930',
+      rank: 'Rank 3450/35,000+',
+      percentage: 'Top 10% globally',
+      date: 'February 2024',
+      icon: Target,
+      color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'JEE Advanced 2022',

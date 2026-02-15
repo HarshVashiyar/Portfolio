@@ -3,8 +3,8 @@ import { Code, Coffee, Lightbulb, Heart, Award, Users } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Months Experience', value: '2+', icon: Code },
-    { label: 'Projects Completed', value: '2+', icon: Lightbulb },
+    { label: 'Months Experience', value: '6+', icon: Code },
+    { label: 'Projects Completed', value: '3+', icon: Lightbulb },
     { label: 'Technologies', value: '20+', icon: Heart },
     { label: 'Cups of Coffee', value: '∞', icon: Coffee },
   ];
@@ -33,15 +33,14 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-400/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <h3 className="text-2xl font-bold text-orange-400 mb-4 relative z-10">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-4 relative z-10">
-                I'm a passionate Full Stack Developer with 2+ months of professional experience 
-                at Alpha Automation Pvt. Ltd. My journey began with curiosity about how websites 
-                work, and it has evolved into a deep love for crafting exceptional user experiences 
+                I'm a passionate Full Stack Developer with 6+ months of professional experience 
+                at various tech. My journey began with competitive programming but gradually shifted towards development after gaining interest for the same. It has evolved into a deep love for crafting exceptional user experiences 
                 and solving complex problems.
               </p>
               <p className="text-gray-300 leading-relaxed relative z-10">
                 I specialize in MERN stack development and enjoy working on projects that 
                 challenge me to learn and grow. When I'm not coding, you'll find me exploring 
-                new technologies, contributing to open source, or building innovative solutions.
+                new technologies or building innovative solutions.
               </p>
             </div>
           </div>

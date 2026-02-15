@@ -5,9 +5,9 @@ const Projects = () => {
   const projects = [
     {
       title: 'Code-Trialz',
-      description: 'A full-stack online judge platform for competitive programming with real-time code execution, problem management, and user ranking system.',
+      description: 'A full-stack online judge platform for competitive programming with real-time code execution, problem management, and AI features.',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Git', 'Docker', 'AWS', 'Linux', 'Operating System', 'Vercel', 'Nginx', 'Tailwind CSS'],
+      tech: ['MongoDB', 'Express', 'React.js', 'Node.js', 'Tailwind CSS', 'Git', 'Docker', 'AWS', 'Linux', 'Operating System', 'Vercel', 'Nginx', 'Tailwind CSS'],
       github: 'https://github.com/HarshVashiyar/CodeTrialz',
       live: 'https://code-trialz.harshvashiyar.in',
       featured: true
@@ -16,9 +16,9 @@ const Projects = () => {
       title: 'MailStorm',
       description: 'A full-stack sub-CRM platform for email automation and communication management with advanced analytics and campaign tracking.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Git', 'Cron', 'Redux', 'PostgreSQL', 'cPanel', 'Tailwind CSS', 'Apache'],
+      tech: ['MongoDB', 'Express', 'React.js', 'Node.js', 'Tailwind CSS', 'Git', 'BullMQ', 'Redis', 'cPanel', 'Vercel', 'Apache', 'GCP'],
       github: 'https://github.com/HarshVashiyar/MailStorm',
-      live: '#',
+      live: 'https://mailstorm.keshavturnomatics.com',
       featured: true
     }
   ];
@@ -50,11 +50,11 @@ const Projects = () => {
               
               <div className="relative z-10">
                 <div className="relative overflow-hidden">
-                  <img 
+                  {/* <img 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  /> */}
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
                   
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
