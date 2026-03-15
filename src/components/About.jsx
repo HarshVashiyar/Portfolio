@@ -6,7 +6,7 @@ const About = () => {
     { label: 'Months Experience', value: '6+', icon: Code },
     { label: 'Projects Completed', value: '3+', icon: Lightbulb },
     { label: 'Technologies', value: '20+', icon: Heart },
-    { label: 'Lines of Code', value: '45k+', icon: Terminal },
+    { label: 'Lines of Code Shipped', value: '25k+', icon: Terminal },
   ];
 
   const highlights = [
