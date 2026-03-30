@@ -3,32 +3,45 @@ import { Calendar, MapPin, ExternalLink, Trophy, Award, Target, Star } from 'luc
 
 const Milestones = () => {
   const experiences = [
-    {
-      title: 'Web Developer',
-      company: 'Agevole Innovations Pvt. Ltd.',
-      location: 'India',
-      period: 'Jan 2026 - May 2026',
-      description: 'Worked as a Web Developer developing in-house CRM services. Gained hands-on experience with shared hosting platforms and GCP along with modern web technologies and development practices.',
-      achievements: [
-        'Developed many in-house services from scratch',
-        'Learnt best production practices',
-        'Collaborated in agile development environment'
-      ],
-      tech: ['Angular.js + Java Springboot']
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'Alpha Automation Pvt. Ltd.',
-      location: 'India',
-      period: 'May 2025 - July 2025',
-      description: 'Worked as a Full Stack Developer developing web applications and automation solutions. Gained hands-on experience with modern web technologies and development practices.',
-      achievements: [
-        'Developed full-stack web applications',
-        'Worked with modern development frameworks',
-        'Collaborated in agile development environment'
-      ],
-      tech: ['MERN Stack']
-    }
+    // {
+    //   title: 'Software Developer',
+    //   company: 'Zeus Learning Pvt. Ltd.',
+    //   location: 'Mumbai, Maharashtra, India',
+    //   period: 'June 2026 - Present',
+    //   description: 'Currently working as a Software Developer at Zeus Learning Pvt. Ltd., contributing to the development of innovative educational technology solutions. Gaining experience in full-stack development, cloud technologies, and agile methodologies.',
+    //   achievements: [
+    //     'Contributed to the development of key features for the company’s flagship product',
+    //     'Collaborated with cross-functional teams to deliver high-quality software solutions',
+    //     'Implemented best practices for code quality and performance optimization'
+    //   ],
+    //   tech: ['React.js + Node.js + AWS']
+    // },
+    // {
+    //   title: 'Web Developer',
+    //   company: 'Agevole Innovations Pvt. Ltd.',
+    //   location: 'India',
+    //   period: 'Jan 2026 - May 2026',
+    //   description: 'Worked as a Web Developer developing in-house CRM services. Gained hands-on experience with shared hosting platforms and GCP along with modern web technologies and development practices.',
+    //   achievements: [
+    //     'Developed many in-house services from scratch',
+    //     'Learnt best production practices',
+    //     'Collaborated in agile development environment'
+    //   ],
+    //   tech: ['Angular.js + Java Springboot']
+    // },
+    // {
+    //   title: 'Full Stack Developer',
+    //   company: 'Alpha Automation Pvt. Ltd.',
+    //   location: 'India',
+    //   period: 'May 2025 - July 2025',
+    //   description: 'Worked as a Full Stack Developer developing web applications and automation solutions. Gained hands-on experience with modern web technologies and development practices.',
+    //   achievements: [
+    //     'Developed full-stack web applications',
+    //     'Worked with modern development frameworks',
+    //     'Collaborated in agile development environment'
+    //   ],
+    //   tech: ['MERN Stack']
+    // }
   ];
 
   const achievements = [
