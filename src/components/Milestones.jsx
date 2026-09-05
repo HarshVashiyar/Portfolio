@@ -3,19 +3,19 @@ import { Calendar, MapPin, ExternalLink, Trophy, Award, Target, Star } from 'luc
 
 const Milestones = () => {
   const experiences = [
-    // {
-    //   title: 'Software Developer',
-    //   company: 'Zeus Learning Pvt. Ltd.',
-    //   location: 'Mumbai, Maharashtra, India',
-    //   period: 'June 2026 - Present',
-    //   description: 'Currently working as a Software Developer at Zeus Learning Pvt. Ltd., contributing to the development of innovative educational technology solutions. Gaining experience in full-stack development, cloud technologies, and agile methodologies.',
-    //   achievements: [
-    //     'Contributed to the development of key features for the company’s flagship product',
-    //     'Collaborated with cross-functional teams to deliver high-quality software solutions',
-    //     'Implemented best practices for code quality and performance optimization'
-    //   ],
-    //   tech: ['React.js + Node.js + AWS']
-    // },
+    {
+      title: 'Software Engineer',
+      company: 'Zeus Systems Pvt. Ltd.',
+      location: 'Mumbai, Maharashtra, India',
+      period: 'June 2026 - Present',
+      description: 'Currently working as a Software Engineer at Zeus Systems Pvt. Ltd., contributing to the development of innovative educational technology solutions. Gaining experience in full-stack development, cloud technologies, and agile methodologies.',
+      achievements: [
+        'Contributed to the development of key features for the company’s flagship product',
+        'Collaborated with cross-functional teams to deliver high-quality software solutions',
+        'Implemented best practices for code quality and performance optimization'
+      ],
+      tech: ['C#, .NET Core, Angular, Azure Blobs, MySQL, MongoDB, Docker, GitLab, AWS']
+    },
     // {
     //   title: 'Web Developer',
     //   company: 'Agevole Innovations Pvt. Ltd.',
