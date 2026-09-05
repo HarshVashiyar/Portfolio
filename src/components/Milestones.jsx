@@ -14,7 +14,7 @@ const Milestones = () => {
         'Collaborated with cross-functional teams to deliver high-quality software solutions',
         'Implemented best practices for code quality and performance optimization'
       ],
-      tech: ['C#, .NET Core, Angular, Azure Blobs, MySQL, MongoDB, Docker, GitLab, AWS']
+      tech: ['C#', '.NET Core', 'Angular', 'Azure Blobs', 'MySQL', 'MongoDB', 'Docker', 'Redis', 'GitLab', 'AWS']
     },
     // {
     //   title: 'Web Developer',
@@ -148,14 +148,21 @@ const Milestones = () => {
                       </div>
                       
                       <div className="flex flex-wrap gap-2">
-                        {exp.tech.map((tech) => (
-                          <span 
-                            key={tech}
-                            className="px-3 py-1 bg-orange-400/10 text-orange-400 rounded-lg text-sm border border-orange-400/20 hover:bg-orange-400/20 transition-colors duration-300"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                        {exp.tech
+                          .flatMap((tech) =>
+                            String(tech)
+                              .split(/\s*\+\s*|\s*,\s*/)
+                              .map((item) => item.trim())
+                              .filter(Boolean)
+                          )
+                          .map((tech, techIndex) => (
+                            <span
+                              key={`${tech}-${techIndex}`}
+                              className="px-2.5 py-1.5 bg-orange-400/10 text-orange-400 rounded-lg text-xs font-medium border border-orange-400/20 hover:bg-orange-400/20 transition-colors duration-300 shadow-sm"
+                            >
+                              {tech}
+                            </span>
+                          ))}
                       </div>
                     </div>
                   </div>

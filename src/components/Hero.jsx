@@ -4,6 +4,7 @@ import TypingEffect from './TypingEffect';
 
 const Hero = () => {
   const roles = [
+    "Software Engineer",
     "Full Stack Developer",
     "Problem Solver", 
     "Creative Thinker",

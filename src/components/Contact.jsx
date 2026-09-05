@@ -58,8 +58,8 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'DAIICT, Gandhinagar',
-      href: 'https://maps.google.com/?q=DAIICT+Gandhinagar',
+      value: 'Peninsula Business Park Tower B, Lower Parel, Mumbai, Maharashtra, India',
+      href: 'https://maps.app.goo.gl/VWfT5BLV6kHFWgteA',
       action: 'location'
     }
   ];
